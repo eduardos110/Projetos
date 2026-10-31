@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Cadastro</h1>
+        <p>Cadastre seus alunos abaixo.</p>
+    </header>
+
+    <main>
+        <form id="formulario">
+
+            <label for="nome">Nome:</label>
+            <input required type="text" id="nome">
+            
+
+            <label for="email">E-mail:</label>
+            <input required type="email" id="email">
+
+            <label for="idade">Idade:</label>
+            <input required min="15" type="number" id="idade">
+
+            <button type="submit">Cadastrar</button>
+            
+
+        </form>
+
+        <h2>Alunos cadastrados</h2>
+
+        <ul id="lista-alunos">
+            <li>Nenhum aluno cadastrado</li>
+        </ul>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
